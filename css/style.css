@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.form .request {
+  color: #272f2f;
+  font-size: 30px;
+  margin-bottom: 25px; }
+.form input {
+  margin-bottom: 25px;
+  width: 90%;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 5px 0;
+  border: none;
+  border-bottom: 2px solid #32cfb6;
+  background: transparent; }
+.form label {
+  font-size: 14px;
+  line-height: 22px;
+  color: #1db8a4;
+  display: block;
+  margin-left: 18px; }
+.form .form_button {
+  border: none;
+  padding: 20px 90px;
+  color: #fff;
+  font-size: 18px;
+  background: linear-gradient(to right, #fb6a4e, #ff606a); }
+
+.header {
+  background: url(../img/bg_png/1.png) no-repeat right top;
+  background-size: 70%; }
+  .header .nav li a:link, .header .nav li a:visited {
+    background-color: transparent; }
+  .header .header_form {
+    margin-top: 240px; }
+  .header .header_img {
+    margin: 100px 0 140px;
+    max-width: 100%;
+    margin-right: 15px; }
+
+.requirement .requirement_top {
+  color: #272f2f;
+  font-size: 30px; }
+.requirement .requirement_flex {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 7.5px; }
+  .requirement .requirement_flex .requirement_item {
+    padding: 0 15px;
+    width: calc(25% - 15px);
+    margin: 7.5px;
+    box-shadow: 0 0 20px #9d9d9d;
+    margin-bottom: 80px; }
+    .requirement .requirement_flex .requirement_item .requirement_item_img {
+      display: flex;
+      height: 125px;
+      margin: 20px 0; }
+      .requirement .requirement_flex .requirement_item .requirement_item_img img {
+        display: block;
+        margin: auto; }
+    .requirement .requirement_flex .requirement_item p {
+      font-size: 12px;
+      color: #272f2f; }
+
+.help {
+  color: #fff;
+  background: #1ea992; }
+  .help .help_bg {
+    max-width: 100%; }
+  .help .help_top {
+    font-size: 30px; }
+  .help .help_flex {
+    display: flex;
+    margin-top: 40px;
+    padding-right: 15px; }
+    .help .help_flex .help_flex_num {
+      font-size: 60px;
+      margin: 0 25px; }
+    .help .help_flex .help_flex_info {
+      margin-top: 15px;
+      font-size: 16px; }
+
+.offer {
+  background: url(../img/bg_png/left2.png) no-repeat right center;
+  background-size: 10%; }
+  .offer .offer_top {
+    margin-top: 50px;
+    font-size: 30px; }
+  .offer .offer_img {
+    display: block;
+    margin: 115px auto 0;
+    width: 50%; }
+  .offer .offer_info {
+    margin-top: 17px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px; }
+
+.contact {
+  background: url(../img/bg_png/3.png); }
+  .contact .contact_top {
+    font-size: 30px;
+    margin-bottom: 120px; }
+  .contact .contact_get {
+    color: #fff; }
+    .contact .contact_get .contact_get_top {
+      font-size: 20px;
+      margin-bottom: 50px; }
+    .contact .contact_get .contact_get_info {
+      font-size: 16px;
+      line-height: 32px;
+      letter-spacing: 0.08em; }
+  .contact .contact_get_icon .get-icon {
+    margin: 60px 45px 90px 0; }
+  .contact .content_map {
+    width: calc(100% + 30px);
+    margin-left: -15px; }
+  .contact .creator {
+    margin: 25px 0;
+    color: #fff;
+    font-size: 20px; }
+
+@media screen and (max-width: 992px) {
+  .header .header_form {
+    margin-top: 40px; }
+  .header .header_img {
+    margin: 40px 0; }
+
+  .requirement .requirement_flex .requirement_item {
+    width: calc(50% - 15px); }
+
+  .help .help_top {
+    text-align: center; }
+
+  .offer {
+    background: transparent; } }
+@media screen and (max-width: 560px) {
+  .requirement .requirement_flex .requirement_item {
+    width: calc(100% - 15px);
+    margin-bottom: 30px; }
+
+  .offer .offer_img {
+    margin-top: 25px; } }
+
+/*# sourceMappingURL=style.css.map */
