@@ -1,7 +1,12 @@
-* {
-	margin: 0; padding: 0; box-sizing: border-box;
+@font-face {
+	font-family: 'Comic_sans';
+	src: url('../fonts/comic_sans.ttf');
 }
 
+* {
+	margin: 0; padding: 0; box-sizing: border-box;
+	font-family: 'Comic_sans', sans-serif;
+}
 
 .form {
 	.request {
@@ -27,6 +32,7 @@
 		margin-left: 18px;
 	}
 	.form_button {
+		border-radius: 6px;
 		border: none;
 		padding: 20px 90px;
 		color: #fff;
@@ -42,6 +48,10 @@
 		li {
 			a:link, a:visited {
 				background-color: transparent;
+				color: #fff;
+			}
+			a:hover, a:active {
+				color: #4ec7ea;
 			}
 		}
 	}	
@@ -55,6 +65,7 @@
 	}
 }
 .requirement {
+	margin-top: 100px;
 	.requirement_top {
 		color: #272f2f;
 		font-size: 30px;
@@ -105,6 +116,7 @@
 		.help_flex_info {
 			margin-top: 15px;
 			font-size: 16px;
+			padding-right: 120px;
 		}
 	}
 }
@@ -129,6 +141,10 @@
 }
 .contact {
 	background: url(../img/bg_png/3.png);
+	.request-contact {
+		color: #fff;
+		font-size: 20px;
+	}
 	.contact_top {
 		font-size: 30px;
 		margin-bottom: 120px;
@@ -143,6 +159,10 @@
 			font-size: 16px;
 			line-height: 32px;
 			letter-spacing: 0.08em;
+		}
+		.contact_get_info-href {
+			display: block;
+			color: #fff;
 		}
 	}
 	.contact_get_icon {
@@ -170,6 +190,17 @@
 		.header_img {
 			margin: 40px 0;
 		}
+		.nav {
+		li {
+			a:link, a:visited {
+				background-color: transparent;
+				color: #4ec7ea;
+			}
+			a:hover, a:active {
+				color: #3690a3;
+			}
+		}
+	}
 	}
 	.requirement {
 		.requirement_flex {
@@ -182,6 +213,11 @@
 		.help_top {
 			text-align: center;
 		}
+		.help_flex {
+			.help_flex_info {
+				padding-right: 50px;
+			}
+		}
 	}
 	.offer {
 		background: transparent;
@@ -189,6 +225,7 @@
 }
 @media screen and (max-width: 560px) {
 	.requirement {
+		margin-top: 20px;
 		.requirement_flex {
 			.requirement_item {
 				width: calc(100% - 15px);

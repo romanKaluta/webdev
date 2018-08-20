@@ -1,7 +1,11 @@
+@font-face {
+  font-family: 'Comic_sans';
+  src: url("../fonts/comic_sans.ttf"); }
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Comic_sans', sans-serif; }
 
 .form .request {
   color: #272f2f;
@@ -23,6 +27,7 @@
   display: block;
   margin-left: 18px; }
 .form .form_button {
+  border-radius: 6px;
   border: none;
   padding: 20px 90px;
   color: #fff;
@@ -33,7 +38,10 @@
   background: url(../img/bg_png/1.png) no-repeat right top;
   background-size: 70%; }
   .header .nav li a:link, .header .nav li a:visited {
-    background-color: transparent; }
+    background-color: transparent;
+    color: #fff; }
+  .header .nav li a:hover, .header .nav li a:active {
+    color: #4ec7ea; }
   .header .header_form {
     margin-top: 240px; }
   .header .header_img {
@@ -41,29 +49,31 @@
     max-width: 100%;
     margin-right: 15px; }
 
-.requirement .requirement_top {
-  color: #272f2f;
-  font-size: 30px; }
-.requirement .requirement_flex {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 7.5px; }
-  .requirement .requirement_flex .requirement_item {
-    padding: 0 15px;
-    width: calc(25% - 15px);
-    margin: 7.5px;
-    box-shadow: 0 0 20px #9d9d9d;
-    margin-bottom: 80px; }
-    .requirement .requirement_flex .requirement_item .requirement_item_img {
-      display: flex;
-      height: 125px;
-      margin: 20px 0; }
-      .requirement .requirement_flex .requirement_item .requirement_item_img img {
-        display: block;
-        margin: auto; }
-    .requirement .requirement_flex .requirement_item p {
-      font-size: 12px;
-      color: #272f2f; }
+.requirement {
+  margin-top: 100px; }
+  .requirement .requirement_top {
+    color: #272f2f;
+    font-size: 30px; }
+  .requirement .requirement_flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 7.5px; }
+    .requirement .requirement_flex .requirement_item {
+      padding: 0 15px;
+      width: calc(25% - 15px);
+      margin: 7.5px;
+      box-shadow: 0 0 20px #9d9d9d;
+      margin-bottom: 80px; }
+      .requirement .requirement_flex .requirement_item .requirement_item_img {
+        display: flex;
+        height: 125px;
+        margin: 20px 0; }
+        .requirement .requirement_flex .requirement_item .requirement_item_img img {
+          display: block;
+          margin: auto; }
+      .requirement .requirement_flex .requirement_item p {
+        font-size: 12px;
+        color: #272f2f; }
 
 .help {
   color: #fff;
@@ -81,7 +91,8 @@
       margin: 0 25px; }
     .help .help_flex .help_flex_info {
       margin-top: 15px;
-      font-size: 16px; }
+      font-size: 16px;
+      padding-right: 120px; }
 
 .offer {
   background: url(../img/bg_png/left2.png) no-repeat right center;
@@ -101,6 +112,9 @@
 
 .contact {
   background: url(../img/bg_png/3.png); }
+  .contact .request-contact {
+    color: #fff;
+    font-size: 20px; }
   .contact .contact_top {
     font-size: 30px;
     margin-bottom: 120px; }
@@ -113,6 +127,9 @@
       font-size: 16px;
       line-height: 32px;
       letter-spacing: 0.08em; }
+    .contact .contact_get .contact_get_info-href {
+      display: block;
+      color: #fff; }
   .contact .contact_get_icon .get-icon {
     margin: 60px 45px 90px 0; }
   .contact .content_map {
@@ -128,19 +145,28 @@
     margin-top: 40px; }
   .header .header_img {
     margin: 40px 0; }
+  .header .nav li a:link, .header .nav li a:visited {
+    background-color: transparent;
+    color: #4ec7ea; }
+  .header .nav li a:hover, .header .nav li a:active {
+    color: #3690a3; }
 
   .requirement .requirement_flex .requirement_item {
     width: calc(50% - 15px); }
 
   .help .help_top {
     text-align: center; }
+  .help .help_flex .help_flex_info {
+    padding-right: 50px; }
 
   .offer {
     background: transparent; } }
 @media screen and (max-width: 560px) {
-  .requirement .requirement_flex .requirement_item {
-    width: calc(100% - 15px);
-    margin-bottom: 30px; }
+  .requirement {
+    margin-top: 20px; }
+    .requirement .requirement_flex .requirement_item {
+      width: calc(100% - 15px);
+      margin-bottom: 30px; }
 
   .offer .offer_img {
     margin-top: 25px; } }

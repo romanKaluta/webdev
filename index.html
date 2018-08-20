@@ -24,13 +24,13 @@
 				<div class="row">
 					<div class="col-lg-4 col-md-5 text-center">
 						<div class="header_form">
-							<div class="form">
+							<form class="form">
 								<h1 class="request">SENT REQUEST</h1>
 								<input type="text" placeholder="Input your name">
-								<label for="mail">INPUT EMAIL</label>
+								<label class="text-left" for="mail">INPUT EMAIL</label>
 								<input class="header_input" type="mail" id="mail" value="example_email@gmail.com">
-								<button class="form_button"><b>SENT</b></button>
-							</div>
+								<button type="submit" class="form_button"><b>SEND</b></button>
+							</form>
 						</div>
 					</div>
 					<div class="col-lg-7 col-lg-offset-1 col-md-7">
@@ -123,27 +123,29 @@
 				<h1 class="offer_top text-center">WE OFFER:</h1>
 				<div class="row">
 					<div class="col-md-4 col-sm-6 col-xs-12">
-						<img onmouseover="changeon1(this)" onmouseout="changeout1(this)" src="img/offers/1.png" alt="" class="offer_img">
+						<img onmouseover="setHoveredImg(this, 2)" onmouseout="setNormalImg(this, 1)" src="img/offers/1.png" alt="" class="offer_img">
 						<p class="offer_info">Career growth</p>
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12">
-						<img onmouseover="changeon2(this)" onmouseout="changeout2(this)" src="img/offers/2.png" alt="" class="offer_img">
+						<img onmouseover="setHoveredImg(this, 1)" onmouseout="setNormalImg(this, 2)" src="img/offers/2.png" alt="" class="offer_img">
 						<p class="offer_info">Flexible working schedule</p>
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12">
-						<img onmouseover="changeon3(this)" onmouseout="changeout3(this)" src="img/offers/3.png" alt="" class="offer_img">
+						<img onmouseover="setHoveredImg(this, 3)" onmouseout="setNormalImg(this, 3)" src="img/offers/3.png" alt="" class="offer_img">
 						<p class="offer_info">Comfortable workplace</p>
 					</div>
+				</div>
+				<div class="row">
 					<div class="col-md-4 col-sm-6 col-xs-12">
-						<img onmouseover="changeon4(this)" onmouseout="changeout4(this)" src="img/offers/4.png" alt="" class="offer_img">
+						<img onmouseover="setHoveredImg(this, 4)" onmouseout="setNormalImg(this, 4)" src="img/offers/4.png" alt="" class="offer_img">
 						<p class="offer_info">Competitive salary<br>according to the<br>qualifications</p>
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12">
-						<img onmouseover="changeon5(this)" onmouseout="changeout5(this)" src="img/offers/5.png" alt="" class="offer_img">
+						<img onmouseover="setHoveredImg(this, 5)" onmouseout="setNormalImg(this, 5)" src="img/offers/5.png" alt="" class="offer_img">
 						<p class="offer_info">Corporate leisure activities</p>
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12">
-						<img onmouseover="changeon6(this)" onmouseout="changeout6(this)" src="img/offers/6.png" alt="" class="offer_img">
+						<img onmouseover="setHoveredImg(this, 6)" onmouseout="setNormalImg(this, 6)" src="img/offers/6.png" alt="" class="offer_img">
 						<p class="offer_info">English lessons</p>
 					</div>
 				</div>
@@ -155,23 +157,23 @@
 				<div class="row">
 					<div class="col-lg-3 col-lg-offset-1">
 						<div class="form">
-							<h1 class="request text-center" style="color: #fff; font-size: 20px">SENT REQUEST</h1>
+							<h1 class="request text-center request-contact">SEND REQUEST</h1>
 							<input type="text" placeholder="Input your name">
 							<label for="mail">INPUT EMAIL</label>
 							<input style="color: #fff;" class="header_input" type="mail" id="mail" value="example_email@gmail.com">
-							<button style="margin-top: 25px" class="form_button"><b>SENT</b></button>
+							<button style="margin-top: 25px" class="form_button"><b>SEND</b></button>
 						</div>
 					</div>
 					<div class="col-lg-4 col-lg-offset-4">
 						<div class="contact_get">
 							<h1 class="contact_get_top">GET IN TOUCH</h1>
 							<p class="contact_get_info">UKRAINE, LVIV</p>
-							<p class="contact_get_info">TELEPHONE: +380509214381</p>
-							<p class="contact_get_info">E-mail: pecodesoftware@gmail.com</p>
+							<a href="tel:+380509214381" class="contact_get_info contact_get_info-href">TELEPHONE: +380509214381</a>
+							<a href="mailto:pecodesoftware@gmail.com" class="contact_get_info contact_get_info-href">E-mail: pecodesoftware@gmail.com</a>
 							<div class="contact_get_icon">
-								<img onmouseover="changeon7(this)" onmouseout="changeout7(this)" src="img/sotial_network/linkedin.png" alt="" class="get-icon">
-								<img onmouseover="changeon8(this)" onmouseout="changeout8(this)" src="img/sotial_network/twitter.png" alt="" class="get-icon">
-								<img onmouseover="changeon9(this)" onmouseout="changeout9(this)" src="img/sotial_network/fb.png" alt="" class="get-icon">
+								<img onmouseover="setSocialImg(this, 'linkedin', true)" onmouseout="setSocialImg(this, 'linkedin')" src="img/social_network/linkedin.png" alt="" class="get-icon">
+								<img onmouseover="setSocialImg(this, 'twitter' ,true)" onmouseout="setSocialImg(this, 'twitter')" src="img/social_network/twitter.png" alt="" class="get-icon">
+								<img onmouseover="setSocialImg(this, 'fb' ,true)" onmouseout="setSocialImg(this, 'fb')" src="img/social_network/fb.png" alt="" class="get-icon">
 							</div>
 						</div>
 					</div>
